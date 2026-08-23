@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B T S : Best Travel Solutions</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <!--My style sheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--Google style sheet for font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!--Font Awesome CDN link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--carosel Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="navbar__s1">
+            <img src="images/logo.png">
+            <h1 class="navbar__s1__title">B.T.S</h1>
+        </div>
+        <div class="navbar__s2">
+            <input class="navbar__menu-toggle" type="checkbox" id="navbar-menu-toggle">
+            <div class="navbar__links">
+                <ul>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="#">Review</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+            <label class="navbar__menu-label" for="navbar-menu-toggle" aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+    </div>
+
+    <div class="categories">
+        <p>What To Do</p>
+        <p>Hotels</p>
+        <p>Restaurant</p>
+        <p>Hidden Spot</p>
+    </div>
+
+    <div class="search">
+        <div class="search__icon">
+            <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+            <input type="text" placeholder="Search for Trip Details and more...">
+            <details class="search__filters">
+                <summary>Filters</summary>
+                <div class="search__filters__content">
+                    <fieldset>
+                        <legend>Price range</legend>
+                        <div class="price-range">
+                            <span>&#8377;0</span>
+                            <input type="range" min="0" max="50000" value="25000">
+                            <span>&#8377;50,000+</span>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Rating</legend>
+                        <label><input type="radio" name="rating" value="4"> 4+ stars</label>
+                        <label><input type="radio" name="rating" value="3"> 3+ stars</label>
+                        <label><input type="radio" name="rating" value="2"> 2+ stars</label>
+                    </fieldset>
+                    <button class="filter__apply" type="button">Apply filters</button>
+                </div>
+            </details>
+            <div class="search__icon__button">
+                <input type="submit" value="search">
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-section">
+
+        <div class="slide__img">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="2000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="images/s1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/s2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/s3.jpg" alt="Third slide">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide__line">
+        </div>
+
+        <div class="slide__description">
+            <p>Plan unforgettable journeys, discover hidden gems, and create memories together.</p>
+        </div>
+
+
+
+    </div>
+
+    <div class="intrest__section">
+        <h1 class="intrest__section__title">Things to do in journey</h1>
+        <p>Whatever you're into, we’ve got it</p>
+        <div class="intrest__section__card">
+            <div class="intrest__section__card__tag">
+                <img src="./images/food.jpg" alt="Food">
+                <p>Food</p>
+            </div>
+
+            <div class="intrest__section__card__tag">
+                <img src="./images/outdoor.jpg" alt="outdoor">
+                <p>Outdoor</p>
+            </div>
+
+            <div class="intrest__section__card__tag">
+                <img src="./images/culture.jpg" alt="culture">
+                <p>Culture</p>
+            </div>
+
+            <div class="intrest__section__card__tag">
+                <img src="./images/water.jpg" alt="water sport">
+                <p>Water Sport</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="nearby__section">
+        <h1 class="nearby__section__title">Explore nearby Attractions</h1>
+        <p>Pick nearby you</p>
+        <div class="nearby__section__container">
+            <p>Coimbatore</p>
+            <p>Kodikanal</p>
+            <p>Ooty</p>
+            <p>Mangalore</p>
+            <p>Yercaud</p>
+            <p>Kerala</p>
+            <p>Bangalore</p>
+            <p>Kashmir</p>
+            <p>Maharashtra</p>
+        </div>
+    </div>
+
+    <div class="recommended">
+        <h1 class="recommended__title">All ages welcome</h1>
+        <p>Experiences the whole family will be into</p>
+        <div class="recommended__card">
+            <div class="recommended__card__event">
+                <img src="./images/c1.jpg" alt="comp_1">
+                <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                <h3>Wizard Walk of York - WINNER Best Tour & Experience of the Year</h3>
+                <p>4.9 ⭐⭐⭐⭐</p>
+                <p>&#8377;7,009 <del>10,099</del></p>
+            </div>
+
+            <div class="recommended__card__event">
+                <img src="./images/c2.jpg" alt="Comp_2">
+                <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                <h3>Visit Vila Encantada, the dinosaur park in Pomerode!</h3>
+                <p>4.9 ⭐⭐⭐⭐</p>
+                <p>&#8377;8,049 <del>12,999</del></p>
+            </div>
+
+            <div class="recommended__card__event">
+                <img src="./images/c3.jpg" alt="Comp_3">
+                <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                <h3>1-Hour Interactive Pirate Cruise (arrive 30 minutes early)</h3>
+                <p>3.8 ⭐⭐</p>
+                <p>&#8377;14,449 <del>22,199</del></p>
+            </div>
+
+            <div class="recommended__card__event">
+                <img src="./images/c4.jpg" alt="Comp_4">
+                <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                <h3>LEGOLAND® California Theme Park Admission Tickets</h3>
+                <p>4.0 ⭐⭐⭐</p>
+                <p>&#8377;10,399 <del>19,999</del></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__brand">
+                <h2>B.T.S</h2>
+                <p>Plan better trips and discover places worth remembering.</p>
+            </div>
+
+            <div class="footer__group">
+                <h3>Explore</h3>
+                <a href="#">Things to do</a>
+                <a href="#">Hotels</a>
+                <a href="#">Restaurants</a>
+                <a href="#">Hidden spots</a>
+            </div>
+
+            <div class="footer__group">
+                <h3>About B.T.S</h3>
+                <a href="#">About us</a>
+                <a href="#">Travel reviews</a>
+                <a href="#">Contact us</a>
+                <a href="#">Help center</a>
+            </div>
+
+            <div class="footer__connect">
+                <h3>Plan on the go</h3>
+                <p>Save favorite places and build trips wherever you are.</p>
+                <div class="footer__socials" aria-label="Social media links">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2026 B.T.S. All rights reserved.</p>
+            <div class="footer__legal">
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Cookie settings</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
